@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-style: normal;
+    line-height: normal;
+    font-family: Rubik, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
 section {
     height: 100vh;
     background-color: #eff2f9;
@@ -18,10 +28,10 @@ section {
     box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
     background-color: #fff;
     padding: 60px 0 70px;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    display: flex;   
 }
+
+/* Стили для левой части */
 
 .product-image-block {
     border-right: 2px solid rgba(20, 20, 20, 0.15);
@@ -56,13 +66,15 @@ section {
 
 .preview:hover {
     box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
-
 }
 
 .preview:hover,
 .preview.selected {
     box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
 }
+
+/* Стили для правой части */
+
 
 .product-info-block {
     padding: 0 60px;
@@ -89,10 +101,9 @@ section {
 }
 
 .text {
-    font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.66667;
+    line-height: 30px;
     letter-spacing: 0.01em;
     color: rgba(20, 20, 20, 0.7);
     margin-bottom: 65px;
@@ -109,11 +120,7 @@ section {
 }
 
 .colors {
-    margin-bottom: 60px;
-}
-
-ul {
-    list-style: none;
+    margin-bottom: 65px;
 }
 
 .color-items {
@@ -179,9 +186,9 @@ ul {
     flex-grow: 1;
 }
 
-select {
+.quantity {
     width: 80px;
-    font-family: "Rubik", sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.01em;
@@ -196,7 +203,6 @@ select {
 }
 
 .price {
-    font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.01em;
@@ -215,6 +221,7 @@ select {
     color: #fff;
     margin-top: 75px;
     transition: 300ms;
+    cursor: pointer;
 }
 
 .btn:hover {
